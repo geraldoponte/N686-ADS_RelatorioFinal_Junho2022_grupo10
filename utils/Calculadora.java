@@ -4,14 +4,15 @@ public class Calculadora {
     public double soma(double numeroA, double numberoB) {
         return numeroA + numberoB;
     }
-    
+
     /** @author Victor Maciel Sousa Silva (mat. 2124704) */
     public double subtracao(double numeroA, double numberoB) {
         return numeroA - numberoB;
     }
 
+    /** @author Pedro Gabriel Suprimio de Almeida (mat. 2124706) */
     public double multiplicacao(double numeroA, double numeroB) {
-        return 0.0;
+        return numeroA * numeroB;
     }
 
     public double piso(double numero) {
@@ -22,8 +23,9 @@ public class Calculadora {
         return Math.ceil(numero);
     }
 
+    /** @author Pedro Gabriel Suprimio de Almeida (mat. 2124706) */
     public double exponencial(double base, double expoente) {
-        return 0.0;
+        return Math.pow(base, expoente);
     }
 
     /** @author Geraldo Giovani Pinho da Ponte (mat. 2124713) */
