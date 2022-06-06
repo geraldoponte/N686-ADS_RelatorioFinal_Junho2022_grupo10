@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Menu {
     private String menuPrincipal() {
@@ -31,11 +32,33 @@ public class Menu {
                 switch (opcao) {
 
                     case 1: {
-                        // TODO IRPF
+                        /*Alexandre Teixeira de Oliveira 2124755 */
+                        System.out.println("Você escolheu IRPF:");
+                        IRPF imposto = new IRPF();
+                        try {
+                            System.out.println("Digite o salário");
+                            numeroA = teclasDigitadas.nextDouble();
+                            System.out.println(" Você pagará R$ " + imposto.calculoIRPF(numeroA) + " de imposto de renda");
+                        }catch (InputMismatchException exception) {
+                            System.out.println("Digite apenas números.Tente novamente");
+                            teclasDigitadas = new Scanner(System.in);
+                            numeroA = 1;
+                        } 
                         break;
                     }
                     case 2: {
-                        // TODO RAÇÃO DO CAVALO
+                        /*Alexandre Teixeira de Oliveira 2124755 */
+                        System.out.println("Você escolheu Ração do Cavalo:");
+                        RacaoCavalo qtdRacao = new RacaoCavalo();
+                        try {
+                            System.out.println("Digite o peso do cavalo");
+                            numeroA = teclasDigitadas.nextDouble();
+                            System.out.println("Esse cavalo necessita de " + qtdRacao.calculaRacao(numeroA) + " kg de ração por dia");
+                        }catch (InputMismatchException exception) {
+                            System.out.println("Digite apenas números.Tente novamente");
+                            teclasDigitadas = new Scanner(System.in);
+                            numeroA = 1;
+                        }   
                         break;
                     }
                     case 3: {

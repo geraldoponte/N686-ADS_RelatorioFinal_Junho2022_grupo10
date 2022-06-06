@@ -12,12 +12,12 @@ public class Calculadora {
         return 0.0;
     }
 
-    public double piso(double numeroA) {
-        return 0.0;
+    public double piso(double numero) {
+        return Math.floor(numero);
     }
 
     public double teto(double numero) {
-        return 0.0;
+        return Math.ceil(numero);
     }
 
     public double exponencial(double base, double expoente) {
