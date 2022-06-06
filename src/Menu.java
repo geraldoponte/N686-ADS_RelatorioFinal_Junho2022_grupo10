@@ -12,7 +12,9 @@ public class Menu {
         sb.append("Digite 6 para calcular média da disciplina\n");
         sb.append("Digite 7 para Função Mostrar Idade\n");
         sb.append("Digite 8 para Função Calcular Frete\n");
-        sb.append("Digite 9 para sair\n");
+        sb.append("Digite 9 para Função 'Gasolina ou Álcool?'\n");
+        sb.append("Digite 10 para Função Calculadora de Imposto\n");
+        sb.append("Digite 11 para sair\n");
         sb.append("Informe a operação desejada: ");
         return sb.toString();
     }
@@ -112,9 +114,23 @@ public class Menu {
                         CalculaFrete calculoFrete = new CalculaFrete();
                         calculoFrete.Calcularfrete();
                         break;
-                        
+
                     }
                     case 9: {
+                        /* Carlos Diego Moreira Rufino (2124707) */
+                        System.out.println("Você escolheu a opção 'Gasolina ou Etanol?':");
+                        GasolinaEtanol gasolinaEtanol = new GasolinaEtanol();
+                        gasolinaEtanol.gasolinaEtanol();
+                        break;
+                    }
+                    case 10: {
+                        /* Carlos Diego Moreira Rufino (2124707) */
+                        System.out.println("Você escolheu a opção 'Calculadora de Imposto':");
+                        CalculaImposto calculoImposto = new CalculaImposto();
+                        calculoImposto.calculaImposto();
+                        break;
+                    }
+                    case 11: {
                         System.out.println("Você escolheu sair");
                         break;
                     }
@@ -124,9 +140,9 @@ public class Menu {
                     }
                 }
 
-                if (opcao != 9) {
+                if (opcao != 11) {
                     if (!in.respondeuSim("Deseja continuar (S/N)? ")) {
-                        opcao = 9;
+                        opcao = 11;
                     }
                 }
 
