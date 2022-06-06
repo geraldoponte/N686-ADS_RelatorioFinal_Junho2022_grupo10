@@ -9,7 +9,7 @@ public class Menu {
         sb.append("Digite 3 para calcular as raízes de uma Equação do Segundo Grau\n");
         sb.append("Digite 4 para calcular o IMC\n");
         sb.append("Digite 5 para Km percorrido\n");
-        sb.append("Digite 6 para Funcao zzzzzz\n");
+        sb.append("Digite 6 para calcular média da disciplina\n");
         sb.append("Digite 7 para Função XXXXX\n");
         sb.append("Digite 8 para Função YYYY\n");
         sb.append("Digite 9 para sair\n");
@@ -89,11 +89,15 @@ public class Menu {
                         break;
                     }
                     case 5: {
-                        // TODO KM
+                        System.out.println("Você escolheu calcular quilometragem do carro alugado:");
+                        Quilometragem km = new Quilometragem();
+                        km.mostrarDistancia();
                         break;
                     }
                     case 6: {
-                        // TODO 6
+                        System.out.println("Você escolheu calcular a média do aluno(a):");
+                        MediaFinal mf = new MediaFinal();
+                        mf.calcularMedia();
                         break;
                     }
                     case 7: {

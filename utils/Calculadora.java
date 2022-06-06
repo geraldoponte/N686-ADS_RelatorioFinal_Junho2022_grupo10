@@ -1,11 +1,13 @@
 public class Calculadora {
 
+    /** @author Victor Maciel Sousa Silva (mat. 2124704) */
     public double soma(double numeroA, double numberoB) {
-        return 0.0;
+        return numeroA + numberoB;
     }
-
+    
+    /** @author Victor Maciel Sousa Silva (mat. 2124704) */
     public double subtracao(double numeroA, double numberoB) {
-        return 0.0;
+        return numeroA - numberoB;
     }
 
     public double multiplicacao(double numeroA, double numeroB) {
