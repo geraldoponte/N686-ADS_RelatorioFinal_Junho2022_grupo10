@@ -10,8 +10,8 @@ public class Menu {
         sb.append("Digite 4 para calcular o IMC\n");
         sb.append("Digite 5 para Km percorrido\n");
         sb.append("Digite 6 para calcular média da disciplina\n");
-        sb.append("Digite 7 para Função XXXXX\n");
-        sb.append("Digite 8 para Função YYYY\n");
+        sb.append("Digite 7 para Função Mostrar Idade\n");
+        sb.append("Digite 8 para Função Calcular Frete\n");
         sb.append("Digite 9 para sair\n");
         sb.append("Informe a operação desejada: ");
         return sb.toString();
@@ -36,6 +36,7 @@ public class Menu {
                         System.out.println("Você escolheu IRPF:");
                         IRPF imposto = new IRPF();
                         try {
+                           
                             System.out.println("Digite o salário");
                             numeroA = teclasDigitadas.nextDouble();
                             System.out.println(" Você pagará R$ " + imposto.calculoIRPF(numeroA) + " de imposto de renda");
@@ -101,12 +102,17 @@ public class Menu {
                         break;
                     }
                     case 7: {
-                        // TODO 7
+                        System.out.println("Você escolheu a função mostrar idade:");
+                        MostraIdade mostraIdade = new MostraIdade();
+                        mostraIdade.mostrarIdade();
                         break;
                     }
                     case 8: {
-                        // TODO 8
+                        System.out.println("Você escolheu a opção, calcular frete:");
+                        CalculaFrete calculoFrete = new CalculaFrete();
+                        calculoFrete.Calcularfrete();
                         break;
+                        
                     }
                     case 9: {
                         System.out.println("Você escolheu sair");
