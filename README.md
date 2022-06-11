@@ -1,11 +1,6 @@
 ## Relatório Final da disciplina N686-AMBIENTES DE DESENVOLVIMENTO DE SOFTWARE (Junho/2022)
 
-Grupo 10 - Números de Matrícula:
--> 2124755
--> 2124707
--> 2124713
--> 2124706
--> 2124704
+Grupo 10 - Números de Matrícula: 2124755, 2124707, 2124713, 2124706 e 2124704.
 
 ## PROPOSTA DE ATIVIDADE
 Definir uma equipe de 3 a 5 integrantes, criar um repositório público no GitHub e adicionar membros da equipe como colaboradores.
